@@ -1,0 +1,28 @@
+div {
+    outline-style: none;
+    border: 0;
+    opacity: .7;
+    color: white;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success{
+    background: green;
+}
+
+.type_err{
+    background: red;
+}
+
+.error-wrap span {
+    display: inline-block;
+    font-weight: 500;
+}

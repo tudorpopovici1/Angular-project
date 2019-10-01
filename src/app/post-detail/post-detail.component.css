@@ -1,0 +1,39 @@
+.pers-button {
+    cursor: pointer;
+    background: #e7773f;
+    color: white;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 25px;
+    border: 0;
+    width: 350px;
+    font-size: 14px;
+    font-weight: 500;
+    animation: slide-in-lateral .5s ease-in;
+}
+
+.pers-button:focus {
+    outline: 0;
+}
+
+.detail-component{
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    background: #eee;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.boxed{
+    margin: 25px auto;
+    padding: 30px 15px;
+    height: auto;
+    width: 50%;
+    background: #fff;
+}

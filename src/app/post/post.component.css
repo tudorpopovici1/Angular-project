@@ -1,0 +1,165 @@
+.post-wrapper {
+    background: #fff;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px
+}
+
+.img-card-wrap {
+    max-height: 75px;
+    width: 100%;
+    height: 75px;
+    background: black;
+}
+
+.img-card-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+}
+
+.card {
+    max-width: 230px;
+    width: 210px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: inline-block;
+    -webkit-box-shadow: 7px 11px 16px -11px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 7px 11px 16px -11px rgba(0, 0, 0, 0.4);
+    box-shadow: 7px 11px 16px -11px rgba(0, 0, 0, 0.4);
+    animation: slide-in .5s ease-in;
+}
+
+.card-text-area {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card h4 {
+    font-weight: 700;
+    text-align: left;
+    margin: 12px 0;
+}
+
+.card p {
+    text-align: left;
+    font-size: 14px;
+}
+
+.pers-button {
+    background: #e7773f;
+    color: white;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 25px;
+    border: 0;
+    width: 250px;
+    font-size: 14px;
+    font-weight: 500;
+    animation: slide-in-lateral .5s ease-in
+}
+
+.pers-button:focus {
+    outline: 0
+}
+
+.main-wrap {
+    max-height: 100%;
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    justify-self: start;
+    margin-right: 2vw;
+    background: #fff;
+}
+
+.pers-button2 {
+    cursor: pointer;
+    background: #e7773f;
+    color: white;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 25px;
+    border: 0;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 500;
+    animation: slide-in-lateral .5s ease-in
+}
+
+.pers-button2:focus {
+    outline: 0
+}
+
+@keyframes slide-in {
+    0% {
+        margin-top: -50px;
+        opacity: 0
+    }
+    50% {
+        margin-top: 70px;
+        opacity: .5
+    }
+    75% {
+        margin-top: 30px
+    }
+    95% {
+        margin-top: 50px;
+        opacity: 1
+    }
+    100% {
+        margin-top: 40px
+    }
+}
+
+@media only screen and (min-width:1100px) and (max-width:1550px) {
+    .post-wrapper {
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 1fr;
+        background: #fff;
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 20px
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .main-wrap {
+        margin: 30px auto;
+        width: 100%
+    }
+    .post-wrapper {
+        height: auto !important;
+        margin-top: 25px;
+        background: #fff;
+        width: 90%;
+        height: auto;
+        display: inline-block
+    }
+    .card {
+        width: 100%;
+        display: inline-block;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

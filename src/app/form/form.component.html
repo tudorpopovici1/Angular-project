@@ -1,0 +1,18 @@
+<div class="form-wrapper">
+        <div class="form-class">
+            <br><br>
+            <label for="userid">Your username</label>
+            <input [(ngModel)]="userid" type="text" id="userid" name="userid"placeholder="No username"/>
+            <br>
+            <label for="titel">Title</label>
+            <input [(ngModel)]="title" type="text" id="titel" name="titel"placeholder="No title"/>
+            <br>
+            <label for="message-text">Message</label>
+            <textarea [(ngModel)]="message" name="message-text" id="message-text"></textarea>
+            <br>
+            <app-status [error]="errorMain"></app-status>
+            <button class="pers-button" id='send-btn' (click)="sendForm()">
+                Submit your post
+            </button>
+        </div>
+    </div>

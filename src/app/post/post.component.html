@@ -1,0 +1,15 @@
+<div class="main-wrap">
+    <div class="post-wrapper">
+        <div *ngFor="let post of showPosts" class="card">
+                <div class="img-card-wrap">
+                    <img src="../../assets/back1.png"/>
+                </div>
+                <div class="card-text-area">
+                    <h4>{{post.title}}</h4>
+                    <p>{{post.body}}</p>
+                </div>
+                <button class="pers-button2" id="load-btn"><a routerLink="/post/{{post.id}}">See more</a></button>
+            </div>
+    </div>
+    <button class="pers-button" id="load-btn" (click)="getMorePosts();">Load more posts</button>
+</div>
